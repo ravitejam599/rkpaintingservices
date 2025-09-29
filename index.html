@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Painting Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* Header */
+        header {
+            background: #1E88E5; /* Blue */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #FF9800; /* Orange */
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            background: #1E88E5; /* Blue */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .hero a:hover {
+            background: #1565C0;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1E88E5; /* Blue */
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background: white;
+            padding: 20px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .service h3 {
+            color: #FF9800; /* Orange */
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #1E88E5; /* Blue */
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #1E88E5; /* Blue */
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .contact a {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 20px auto 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .contact button {
+            padding: 15px;
+            background: #FF9800; /* Orange */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact button:hover {
+            background: #FB8C00;
+        }
+
+        /* Call Button */
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1E88E5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
+
+        .call-button:hover {
+            background: #1565C0;
+        }
+
+        /* Footer */
+        footer {
+            background: #1E88E5; /* Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .service-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="RK Painting Services Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Your Vision, Our Brush</h1>
+        <p>Professional Painting Services in Hyderabad</p>
+        <a href="#contact">Get in Touch</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Interior Painting</h3>
+                <p>High-quality interior painting for homes and offices.</p>
+            </div>
+            <div class="service">
+                <h3>Exterior Painting</h3>
+                <p>Durable exterior painting that withstands the elements.</p>
+            </div>
+            <div class="service">
+                <h3>Decorative Finishes</h3>
+                <p>Stylish decorative finishes to enhance your walls.</p>
+            </div>
+            <div class="service">
+                <h3>Residential & Commercial</h3>
+                <p>Comprehensive painting solutions for any property type.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>RK Painting Services is your trusted partner for all painting needs. With years of experience, we deliver high-quality, reliable, and affordable painting services across Hyderabad. Your satisfaction is our priority!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 9666252598 / 9440666096</p>
+        <p>Email: <a href="mailto:ravitejam599@gmail.com">ravitejam599@gmail.com</a></p>
+        <p>WhatsApp: 9666252598</p>
+        <p>Location: Hyderabad / All Areas</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Floating Call Button -->
+    <a href="tel:9666252598" class="call-button">&#128222;</a>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 RK Painting Services. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
